@@ -63,6 +63,8 @@
     "release:pre": "npm run release -- --preRelease",
     "release:rc": "npm run release -- --preRelease",
     "test": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "npm run test:e2e -- --ui",
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
@@ -87,6 +89,7 @@
   ],
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.9",
+    "@playwright/test": "^1.37.1",
     "@release-it/conventional-changelog": "^7.0.0",
     "@types/file-saver": "^2.0.5",
     "@types/node": "^18.17.1",

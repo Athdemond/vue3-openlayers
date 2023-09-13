@@ -20,10 +20,7 @@
       <ol-source-webglpoints :format="geoJson">
         <ol-feature v-for="index in 20" :key="index">
           <ol-geom-point
-            :coordinates="[
-              getRandomInRange(24, 45, 3),
-              getRandomInRange(35, 41, 3),
-            ]"
+            :coordinates="arrayWith500Points[index - 1]"
           ></ol-geom-point>
         </ol-feature>
       </ol-source-webglpoints>
@@ -41,10 +38,7 @@ const rotation = ref(0);
 
 const format = inject("ol-format");
 const geoJson = new format.GeoJSON();
-
-const getRandomInRange = (from, to, fixed) => {
-  return (Math.random() * (to - from) + from).toFixed(fixed) * 1;
-};
+import { arrayWith500Points } from "./points";
 
 const webglPointsStyle = {
   "circle-radius": 6,
