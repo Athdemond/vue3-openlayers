@@ -14,7 +14,7 @@ export class MapPage {
 
   async waitUntilReady() {
     await this.page.waitForLoadState();
-    await this.page.waitForSelector(".ol-viewport");
+    await this.page.waitForSelector("canvas");
   }
 
   async waitUntilCanvasLoaded() {
@@ -32,7 +32,7 @@ export class MapPage {
   }
 
   async checkCanvasScreenshot(n = 0) {
-    await expect(this.page.locator(".ol-viewport").nth(n)).toHaveScreenshot({
+    await expect(this.page.locator("canvas").nth(n)).toHaveScreenshot({
       timeout: 3000,
     });
   }
