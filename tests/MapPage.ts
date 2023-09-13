@@ -31,8 +31,8 @@ export class MapPage {
     }
   }
 
-  checkCanvasScreenshot(n = 0) {
-    expect(this.page.locator(".ol-viewport").nth(n)).toHaveScreenshot({
+  async checkCanvasScreenshot(n = 0) {
+    await expect(this.page.locator(".ol-viewport").nth(n)).toHaveScreenshot({
       timeout: 3000,
     });
   }

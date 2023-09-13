@@ -9,7 +9,7 @@ test.describe("General", () => {
       map.goto("/componentsguide/map/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -19,7 +19,7 @@ test.describe("General", () => {
       map.goto("/componentsguide/view/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -29,7 +29,7 @@ test.describe("General", () => {
       map.goto("/componentsguide/overlay/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -39,7 +39,7 @@ test.describe("General", () => {
       map.goto("/componentsguide/geolocation/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
 
     test("should adjust the geolaction", async ({ page, context }) => {
@@ -52,7 +52,7 @@ test.describe("General", () => {
       context.setGeolocation(coords);
       await map.waitUntilCanvasLoaded();
 
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -62,7 +62,7 @@ test.describe("General", () => {
       map.goto("/componentsguide/projection/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 });

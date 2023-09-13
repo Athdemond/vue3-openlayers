@@ -9,7 +9,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/group/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -19,7 +19,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/animatedclusterlayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -29,7 +29,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/heatmaplayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -39,7 +39,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/imagelayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -49,7 +49,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/tilelayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -59,7 +59,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/vectorimagelayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -69,7 +69,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/vectorlayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -79,7 +79,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/vectortilelayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -89,7 +89,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/webglpointslayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -99,7 +99,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/layers/webgltilelayer/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 });

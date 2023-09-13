@@ -9,7 +9,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/bing/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -19,7 +19,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/cluster/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -29,7 +29,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/imagestatic/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -39,7 +39,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/imagewms/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -49,7 +49,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/osm/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -59,7 +59,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/stamen/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -69,7 +69,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/tianditu/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -78,7 +78,7 @@ test.describe("Layers", () => {
       const map = new MapPage(page);
       map.goto("/componentsguide/sources/arcgisrest/");
       await map.waitUntilReady();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -88,7 +88,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/tilejson/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -98,7 +98,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/tilewms/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -108,7 +108,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/vector/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot(0);
+      await map.checkCanvasScreenshot(0);
     });
 
     test("should render (using url)", async ({ page }) => {
@@ -116,7 +116,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/vector/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot(1);
+      await map.checkCanvasScreenshot(1);
     });
   });
 
@@ -126,7 +126,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/vectortile/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 
@@ -136,7 +136,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/webglpoints/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot(0);
+      await map.checkCanvasScreenshot(0);
     });
 
     test("should render (using ol-feature)", async ({ page }) => {
@@ -144,7 +144,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/webglpoints/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot(1);
+      await map.checkCanvasScreenshot(1);
     });
   });
 
@@ -154,7 +154,7 @@ test.describe("Layers", () => {
       map.goto("/componentsguide/sources/xyz/");
       await map.waitUntilReady();
       await map.waitUntilCanvasLoaded();
-      map.checkCanvasScreenshot();
+      await map.checkCanvasScreenshot();
     });
   });
 });
