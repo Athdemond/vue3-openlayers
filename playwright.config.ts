@@ -35,6 +35,14 @@ export default defineConfig({
     geolocation: { latitude: 50.8551729, longitude: 4.340312 }, // Brussels
   },
 
+  expect: {
+    toMatchSnapshot: {
+      threshold: 0.3,
+      maxDiffPixels: 100,
+      maxDiffPixelRatio: 0.3,
+    },
+  },
+
   /* Configure projects for major browsers */
   projects: [
     {
